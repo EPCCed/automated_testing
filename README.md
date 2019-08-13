@@ -29,7 +29,7 @@ If you want to run the examples in this guide yourself, then you will need Pytho
 To get these examples, you can download the ZIP file of this repository by clicking on the Download ZIP button. Or, if know how to use Git, clone this repository, for example:
  
 ```
-$ git clone http://github.com/softwaresaved/automated_testing.git
+$ git clone http://github.com/EPCCed/automated_testing.git
 ```
 
 If using Linux/Unix, then, once you have the repository, we need to set permissions on a couple of scripts so they can be executed directly, and add the current directory to our PATH environment variable. Run the following:
@@ -46,11 +46,11 @@ Why do we need to test our code? Consider the case of Geoffrey Chang, a research
 
 > We wish to retract our research article ... and both of our Reports ... an in-house data reduction program introduced a change in sign ... converted the anomalous pairs (I+ and I-) to (F- and F+)...
 
-Chang, G., Roth, C.B., Reyes, C.L., Pornillos, O., Yen-Ju, C., Chen, A.P. (2006) Retraction. Science 22 December 2006: Vol. 314 no. 5807 p. 1875  DOI: [10.1126/science.314.587.1875b](http://www.sciencemag.org/content/314/5807/1875.2.long)
+Chang, G., Roth, C.B., Reyes, C.L., Pornillos, O., Yen-Ju, C., Chen, A.P. (2006) Retraction. ScienceÂ 22 December 2006:Â Vol. 314Â no. 5807Â p. 1875Â  DOI:Â [10.1126/science.314.587.1875b](http://www.sciencemag.org/content/314/5807/1875.2.long)
 
 It was a group of Swiss researchers that first raised concerns about the data. The data was flawed due to a bug in a data analysis program causing two columns to be flipped.
 
-> Swiss researchers published a paper in Nature that cast serious doubt on a protein structure Chang's group had described in a 2001 Science paper.
+> Swiss researchers published a paper inÂ NatureÂ that cast serious doubt on a protein structure Chang's group had described in a 2001Â ScienceÂ paper.
 
 > Chang was horrified to discover that a homemade data-analysis program had flipped two columns of data
 
@@ -700,7 +700,7 @@ Unit test frameworks for other languages provide similar functions:
 * CPPUnit for C++: `CPPUNIT_ASSERT_DOUBLES_EQUAL(expected, actual, delta)`
 * googletest for C++: `ASSERT_NEAR(val1, val2, abs_error)`
 * FRUIT for Fortran: `subroutine assert_eq_double_in_range_(var1, var2, delta, message)`
-* JUnit for Java: `org.junit.Assert.assertEquals(double expected, double actual, double delta)`
+* JUnit for Java: `org.junit.Assert.assertEquals(doubleÂ expected, doubleÂ actual, doubleÂ delta)`
 * testthat for R: 
   - `expect_equal(actual, expected, tolerance=DELTA)` - absolute error within `DELTA`
   - `expect_equal(actual, expected, scale=expected, tolerance=DELTA)` - relative error within `DELTA`
@@ -861,7 +861,7 @@ The consultant then worked through BASIL tutorials that invoked FABBER, so they 
 
 The consultant used a shell script-based regression test framework that checked for the existence of output files, and compared expected files to actual files using the `diff` command.
 
-One reason for the consultant using a regression test framework is that they were not a bioinformatician. There was no way they could assess the scientific correctness of FABBER’s outputs, but the regression test framework meant that they could detect whether or not they had changed its behaviour.
+One reason for the consultant using a regression test framework is that they were not a bioinformatician. There was no way they could assess the scientific correctness of FABBERÂ’s outputs, but the regression test framework meant that they could detect whether or not they had changed its behaviour.
 
 ### TPLS (Two-phase Level Set)
 
